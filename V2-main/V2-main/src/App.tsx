@@ -24,9 +24,11 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 };
 
 const App = () => (
+  
   <UserProvider>
     <Router>
       <div className="app min-h-screen bg-gradient-to-r from-yellow-900 via-yellow-800 to-yellow-900 text-white">
+        
         <Routes>
           {/* Redirect "/" to Cover Page */}
           <Route path="/" element={<CoverPage />} />
@@ -72,6 +74,7 @@ const App = () => (
         </Routes>
       </div>
     </Router>
+    
   </UserProvider>
 );
 
